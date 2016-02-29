@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blueberry.command.MainActivity" >
+    
+    
+    <com.blueberry.command.DrawCanvas 
+        android:id="@+id/ac_draw_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ac_draw_canvas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             >
+             
+            <Button
+                android:id="@+id/btn_red"
+               	android:layout_width="0dp"
+               	android:layout_weight="1"
+               	android:layout_height="wrap_content"
+               	android:text="红色"
+               	android:gravity="center"
+               	android:onClick="onClick"
+               />
+                
+            <Button
+                android:id="@+id/btn_green"
+               	android:layout_width="0dp"
+               	android:layout_weight="1"
+               	android:layout_height="wrap_content"
+               	android:text="绿色"
+               	android:gravity="center"
+               	 	android:onClick="onClick"
+                />
+                
+            <Button
+                android:id="@+id/btn_blue"
+               	android:layout_width="0dp"
+               	android:layout_weight="1"
+               	android:layout_height="wrap_content"
+               	android:text="蓝色"
+               	android:gravity="center"
+               	 	android:onClick="onClick"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            
+            >
+            <Button android:id="@+id/normal_brush"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="普通笔刷"
+                 	android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/circle_brush"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="原型笔刷"
+                 	android:onClick="onClick"
+                ></Button>
+        </LinearLayout>
+
+        
+        <LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+            >
+            <Button android:id="@+id/btn_undo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="撤销"
+                 	android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btn_redo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重做"
+                 	android:onClick="onClick"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
