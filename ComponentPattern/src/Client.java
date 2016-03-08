@@ -9,7 +9,16 @@
 //
 //
 
-
+/**
+ * 此为 安全组合模式
+ * 
+ * 这个组合模式，没有更好面向接口(将Composite直接暴漏)
+ * 
+ * 可以更改为透明组合模式，即 将addChild(),removeChild(),移入父类Component,此时，叶子节点(Leaf)中执行这些方法，
+ * 应抛出UnsupportOperationException();
+ * @author M.Y.G
+ *
+ */
 
 
 public class Client {
