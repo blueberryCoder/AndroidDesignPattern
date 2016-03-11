@@ -7,5 +7,6 @@ public class Client {
 		ticket02.showTicketInfo("下鋪");
 		Ticket ticket03 = TicketFactory.getTicket("北京", "青島");
 		ticket03.showTicketInfo("坐票");
+		//branch1
 	}
 }
